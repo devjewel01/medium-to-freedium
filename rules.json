@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://freedium-mirror.cfd/medium.com/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://medium\\.com/(p/[a-zA-Z0-9]+|@[^/]+/[^/?#]+)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

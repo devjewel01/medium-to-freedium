@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Medium → Freedium Redirect",
+  "version": "1.0.0",
+  "description": "Redirect Medium articles to Freedium mirror with enable/disable toggle",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://medium.com/*"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
