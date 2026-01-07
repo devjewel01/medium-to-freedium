@@ -1,6 +1,6 @@
 # Medium to Freedium Redirect
 
-![Extension Icon](icon-128.png)
+![Extension Icon](icons/icon-128.png)
 
 A simple, open-source Chrome extension that automatically redirects Medium paywalled articles to [Freedium](https://freedium.cfd/), unlocking them for free reading.
 
