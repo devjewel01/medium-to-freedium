@@ -2,7 +2,7 @@
 
 ![Extension Icon](icons/icon-128.png)
 
-A simple, open-source browser extension (Chrome & Firefox) that automatically redirects Medium paywalled articles to [Freedium](https://freedium.cfd/), unlocking them for free reading.
+A simple, open-source browser extension (Chrome & Firefox) that automatically redirects Medium paywalled articles to [Freedium](https://freedium-mirror.cfd/), unlocking them for free reading.
 
 ## Features
 
@@ -47,4 +47,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
 
-- [Freedium](https://freedium.cfd/) for providing the mirror service.
+- [Freedium](https://freedium-mirror.cfd/) for providing the mirror service.
