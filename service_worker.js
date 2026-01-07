@@ -1,19 +1,22 @@
 const RULESET_ID = "ruleset_1";
 
-async function syncRuleset() {
-  const { enabled } = await chrome.storage.sync.get("enabled");
-  const isEnabled = enabled !== false; // default = true
+function syncRuleset() {
+  chrome.storage.sync.get("enabled", (data) => {
+    const isEnabled = data.enabled !== false; // default = true
 
-  await chrome.declarativeNetRequest.updateEnabledRulesets({
-    enableRulesetIds: isEnabled ? [RULESET_ID] : [],
-    disableRulesetIds: isEnabled ? [] : [RULESET_ID]
+    // specific to V3, both Chrome and Firefox 'chrome' namespace support this promise
+    chrome.declarativeNetRequest.updateEnabledRulesets({
+      enableRulesetIds: isEnabled ? [RULESET_ID] : [],
+      disableRulesetIds: isEnabled ? [] : [RULESET_ID]
+    }).catch((err) => console.error("Rule update failed:", err));
   });
 }
 
 // On install
-chrome.runtime.onInstalled.addListener(async () => {
-  await chrome.storage.sync.set({ enabled: true });
-  await syncRuleset();
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ enabled: true }, () => {
+    syncRuleset();
+  });
 });
 
 // On browser startup

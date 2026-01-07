@@ -2,14 +2,15 @@
 
 ![Extension Icon](icons/icon-128.png)
 
-A simple, open-source Chrome extension that automatically redirects Medium paywalled articles to [Freedium](https://freedium.cfd/), unlocking them for free reading.
+A simple, open-source browser extension (Chrome & Firefox) that automatically redirects Medium paywalled articles to [Freedium](https://freedium.cfd/), unlocking them for free reading.
 
 ## Features
 
 - 🚀 **Automatic Redirection**: Instantly redirects Medium article links to Freedium.
 - 🔄 **Works Everywhere**: Supports standard user profiles (`@user/article`) and publication URLs (`publication/article`).
+- 🦊 **Cross-Browser**: Compatible with Google Chrome, Edge, Brave, and Mozilla Firefox (Manifest V3).
 - 🎛️ **Toggle Control**: Easily enable or disable the redirection via a modern popup interface.
-- ⚡ **Lightweight**: Built with Manifest V3 and declarativeNetRequest for maximum performance and battery life.
+- ⚡ **Lightweight**: Built with Manifest V3 and declarativeNetRequest for maximum performance a
 - 🔒 **Privacy Focused**: No data collection, no tracking. Just a simple redirect rule.
 
 ## Installation
