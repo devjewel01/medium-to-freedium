@@ -1,6 +1,8 @@
 # Medium to Freedium Redirect
 
-![Extension Icon](icons/icon-128.png)
+<div align="center">
+  <img src="icons/icon-128.png" alt="Extension Icon" width="128">
+</div>
 
 A simple, open-source browser extension (Chrome & Firefox) that automatically redirects Medium paywalled articles to [Freedium](https://freedium-mirror.cfd/), unlocking them for free reading.
 
@@ -16,7 +18,7 @@ A simple, open-source browser extension (Chrome & Firefox) that automatically re
 ## Installation
 
 ### From Chrome Web Store
-*(Link comng soon)*
+*(Link coming soon)*
 
 ### Manual Installation (Developer Mode)
 1.  Clone or download this repository.
