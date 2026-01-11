@@ -9,7 +9,7 @@ A simple, open-source browser extension (Chrome & Firefox) that automatically re
 ## Features
 
 - 🚀 **Automatic Redirection**: Instantly redirects Medium article links to Freedium.
-- 🔄 **Works Everywhere**: Supports standard user profiles (`@user/article`) and publication URLs (`publication/article`).
+- 🔄 **Works Everywhere**: Supports standard user profiles (`@user/article`), publication URLs (`publication/article`), and custom subdomain URLs (`username.medium.com/article`).
 - 🦊 **Cross-Browser**: Compatible with Google Chrome, Edge, Brave, and Mozilla Firefox (Manifest V3).
 - 🎛️ **Toggle Control**: Easily enable or disable the redirection via a modern popup interface.
 - ⚡ **Lightweight**: Built with Manifest V3 and declarativeNetRequest for maximum performance a

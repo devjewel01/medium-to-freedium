@@ -14,5 +14,21 @@
         "main_frame"
       ]
     }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://freedium-mirror.cfd/\\1.medium.com/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([a-zA-Z0-9-]+)\\.medium\\.com/([^/?#]+)",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
   }
 ]
